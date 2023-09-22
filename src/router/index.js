@@ -6,7 +6,7 @@ Vue.use(VueRouter)
 const routes = [
     // 登录
     {
-        path:'/*',
+        path:'/404',
         component: () => import('../views/not-found/NotFound.vue'),
     },
     {
