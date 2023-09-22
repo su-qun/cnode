@@ -1,16 +1,20 @@
 <template>
   <div>
-    <h3>hello conode</h3>
-    <el-button type="primary">主要按钮</el-button>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
+import {mapMutations} from "vuex"
 export default {
-
-}
+  created () {
+    this.getInfo();
+  },
+  methods: {
+    ...mapMutations(['getInfo'])
+  },
+  };
 </script>
 
 <style>
-
 </style>
